@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Jost", sans-serif;
+}
+
+// .suggestions {
+// 	width: 95%;
+// 	margin: 0 auto;
+// }
+
+// .suggestions {
+// 	display: flex;
+// 	gap: 1.88em;
+
+// 	section:first-child {
+// 		display: flex;
+// 		flex-direction: column;
+// 		gap: 1.5em;
+
+// 		width: 15.93em;
+
+// 		.title {
+// 			height: 8.56em;
+// 			border: 1px solid black;
+// 		}
+// 		.tags {
+// 			height: 10.38em;
+// 			border: 1px solid black;
+// 		}
+// 		.roadmap {
+// 			height: 11.13em;
+// 			border: 1px solid black;
+
+// 			div {
+// 				display: flex;
+// 			}
+// 		}
+// 	}
+
+// 	section:last-child {
+// 		display: flex;
+// 		flex-direction: column;
+// 		gap: 1.25em;
+
+// 		width: 51.56rem;
+
+// 		.heading {
+// 			height: 4.5em;
+// 			border: 1px solid black;
+// 		}
+// 		.suggestion {
+// 			height: 9.44em;
+// 			border: 1px solid black;
+
+// 			display: flex;
+// 			:last-child {
+// 				display: flex;
+// 			}
+// 		}
+
+// 		.emptySuggestions {
+// 			display: flex;
+// 			flex-direction: column;
+// 			justify-content: center;
+// 			align-items: center;
+// 		}
+// 	}
+// }
+.feedbackDetails {
+	section:first-child {
+		display: flex;
+		justify-content: space-between;
+
+		div:first-child {
+			display: flex;
+		}
+
+		margin-bottom: 2rem;
+	}
+	section:nth-child(2) {
+		height: 9.44em;
+		border: 1px solid black;
+
+		display: flex;
+		:last-child {
+			display: flex;
+		}
+	}
+	.comment {
+		.heading {
+			display: flex;
+			justify-content: space-between;
+		}
+		p {
+			text-align: center;
+		}
+		margin-bottom: 2rem;
+	}
+	section:last-child {
+		.comments {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+.comment-reply {
+	margin-left: 4rem;
+}

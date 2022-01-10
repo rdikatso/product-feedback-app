@@ -1,0 +1,60 @@
+.heading {
+  width: 100%;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #373f68;
+  color: #ffffff;
+  font-size: 0.813rem;
+  line-height: 1.19rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.heading .custom-select {
+  padding-top: 1.13rem;
+  background: #373f68;
+  color: #ffffff;
+}
+
+.heading .custom-select .select-option-list {
+  width: 15.9rem;
+  height: 12rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+          box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+  border-radius: 0.625rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heading .custom-select .select-option-list button {
+  height: 25%;
+  background: #ffffff;
+  color: #647196;
+  line-height: 1.4rem;
+  border-bottom: 1px solid #647196;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.heading .custom-select .select-option-list button:last-child {
+  border-bottom: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+/*# sourceMappingURL=Heading.css.map */
