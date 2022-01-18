@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import suggestionIcon from '../images/suggestions/icon-suggestions.svg'
 import { useNavigate } from 'react-router-dom'
 import { Button } from './utilities/Button'
@@ -8,7 +8,7 @@ import  downArrow  from '../images/shared/icon-arrow-down.svg'
 import '../css/Heading.css'
 
 
-export const Heading = ({ onChange, onDisplay, selectedOption, openList, selectData, number}) => {
+export const Heading = ({ onChange, onDisplay, selectedOption, openList, selectData, number, width, breakpoint}) => {
 
     let navigate = useNavigate();
     function handleClick(){
@@ -59,17 +59,17 @@ export const Heading = ({ onChange, onDisplay, selectedOption, openList, selectD
     //     setOption(e.target.value);
     // }
 
-    const[width,setwidth] = useState(window.innerWidth);
-    const breakpoint = 376;
+//     const[width,setwidth] = useState(window.innerWidth);
+//     const breakpoint = 376;
 
-    useEffect(() => {
-    const handleWindowResize = () => setwidth(window.innerWidth)
-    window.addEventListener("resize", handleWindowResize);
+//     useEffect(() => {
+//     const handleWindowResize = () => setwidth(window.innerWidth)
+//     window.addEventListener("resize", handleWindowResize);
 
-    //Retun a function from the effect that removes the event listener
+//     //Retun a function from the effect that removes the event listener
 
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, [])
+//     return () => window.removeEventListener("resize", handleWindowResize);
+//   }, [])
 
     return (
         <div className="heading">
@@ -94,7 +94,7 @@ export const Heading = ({ onChange, onDisplay, selectedOption, openList, selectD
                 <div className="select-header">
                     <div className="header-title" onClick={onDisplay}><span>Sort by: </span><span>{selectedOption} </span><img src={openList ? upArrow : downArrow} alt="arrow"></img></div>
                 </div>
-                <div className={`${ openList ? 'active' : 'hidden'} select-option-list`}onClick={onChange} >
+                <div className={`${ openList ? 'show' : 'hide'} select-option-list`}onClick={onChange} >
                     {selectData.map(option => {
                         return(
                             <button className="custom-select-option" type="button" key={option.id} value={option.title}>{option.title}</button>
@@ -104,7 +104,7 @@ export const Heading = ({ onChange, onDisplay, selectedOption, openList, selectD
                 </div>
                 
             </div>
-            <Button onClick={handleClick} btnLabel="+ Add Feedback"/>
+            <Button cname="add-feedback" onClick={handleClick} btnLabel="+ Add Feedback"/>
 
 
         </div>

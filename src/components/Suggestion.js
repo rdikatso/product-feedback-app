@@ -2,6 +2,7 @@ import React from 'react'
 // import { Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import arrowUp from '../images/shared/icon-arrow-up.svg'
+import '../css/Suggestion.css'
 
 export const Suggestion = ({ suggestion }) => {
 

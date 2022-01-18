@@ -71,4 +71,15 @@ body {
 .comment-reply {
   margin-left: 4rem;
 }
+
+.add-feedback {
+  margin-left: 44px;
+  padding-left: 0.656rem;
+  padding-right: 0.656rem;
+  width: 8.375rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 19px;
+  background: #ad1fea;
+}
 /*# sourceMappingURL=App.css.map */

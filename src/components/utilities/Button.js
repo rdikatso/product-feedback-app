@@ -1,9 +1,10 @@
 import React from 'react'
+import '../../css/Button.css'
 
-export const Button = ({btnLabel, onClick}) => {
+export const Button = ({btnLabel, onClick, cname}) => {
     return (
-        <div className="btn">
-            <button onClick={onClick}>{btnLabel}</button>
+        <div>
+            <button className={`btn ${cname}`} onClick={onClick}>{btnLabel}</button>
         </div>
     )
 }

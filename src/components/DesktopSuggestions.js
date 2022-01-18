@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Title } from './Title'
 import { Tags } from './Tags'
 import { Roadmap } from './Roadmap'
@@ -23,6 +23,18 @@ export const DesktopSuggestions = () => {
     // function handleSelect(e){
     //     setSelect(e.target.value)
     // }
+
+    const[width,setwidth] = useState(window.innerWidth);
+    const breakpoint = 375;
+
+    useEffect(() => {
+    const handleWindowResize = () => setwidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+
+    //Retun a function from the effect that removes the event listener
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, [])
 
     const [option, setOption] = useState('Most Votes');
     const [isListOpen, setIsListOpen] = useState(false);
@@ -127,9 +139,10 @@ export const DesktopSuggestions = () => {
             </section>
             <section>
                 {/* <Heading selectedOption={select} onChange={handleSelect} number={suggestions.length }/> */}
-                <Heading selectedOption={option} onChange={handleOptionClick} onDisplay={handleOptionDisplay} number={suggestions.length} selectData={select} openList={isListOpen} />
+                <Heading selectedOption={option} onChange={handleOptionClick} onDisplay={handleOptionDisplay} number={suggestions.length} selectData={select} openList={isListOpen} width={width} breakpoint={breakpoint}/>
                 {suggestions.length ? suggestions.map(suggestion => <Suggestion key={suggestion.id} suggestion={suggestion}/>) : <EmptySuggestions />}
             </section>
+           
         </div>
     )
 }

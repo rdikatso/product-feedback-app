@@ -10,13 +10,22 @@
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 
+	position: relative;
+
 	.custom-select {
 		padding-top: 1.13rem;
 		background: #373f68;
 		color: #ffffff;
 
+		.hide {
+			opacity: 0;
+		}
+		.show {
+			opacity: 1;
+		}
+
 		.select-option-list {
-			width: 15.9rem;
+			width: 200%;
 			height: 12rem;
 			background: #ffffff;
 			box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
@@ -26,16 +35,22 @@
 			display: flex;
 			flex-direction: column;
 
+			overflow: hidden;
+			margin-top: 2rem;
+
 			button {
 				height: 25%;
 
 				background: #ffffff;
 				color: #647196;
 				line-height: 1.4rem;
-				border-bottom: 1px solid #647196;
+				border-bottom: 1px solid #64719615;
 				border-left: none;
 				border-right: none;
 				border-top: none;
+
+				text-align: left;
+				padding-left: 1.5rem;
 			}
 			button:last-child {
 				border-bottom: none;
@@ -43,12 +58,7 @@
 		}
 	}
 }
-// .select-option-list {
-// 	z-index: 100;
-// 	height: 10em;
-// 	color: white;
-// 	background: red;
-// }
+
 .hidden {
 	display: none;
 }
