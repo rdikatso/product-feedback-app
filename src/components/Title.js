@@ -10,7 +10,9 @@ export const Title = () => {
                 <h4>Frontend Mentor</h4>
                 <p>Feedback Board</p>
             </div>
-            <img src={hamburger} alt="hamburger-menu-icon"></img>
+            <div className="img-container">
+                <img src={hamburger} alt="hamburger-menu-icon"></img>
+            </div>
         </div>
     )
 }

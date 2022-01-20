@@ -32,7 +32,7 @@ export const Suggestion = ({ suggestion }) => {
         <div className="suggestion" onClick={() => {
             navigate('/FeedbackDetails', {state: suggestion})
         }}>
-                <div className="NumberOfVotes">
+                <div className="numberOfVotes">
                     <img src={arrowUp} alt="number of votes"></img>
                     <p>{upvotes}</p>
                 </div>

@@ -16,13 +16,25 @@
   background: url("../images/suggestions/mobile/background-header.png");
 }
 
+.title .img-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 12rem;
+}
+
 .title img {
   position: absolute;
+  left: 0;
   width: 1.25rem;
   height: 1.06rem;
-  left: 20.7rem;
-  top: 1.69rem;
-  margin-right: 1.5rem;
 }
 
 .title h4 {
@@ -38,5 +50,13 @@
   font-size: 0.813rem;
   line-height: 1.19rem;
   color: rgba(255, 255, 255, 0.75);
+}
+
+.tags {
+  display: none;
+}
+
+.roadmap {
+  display: none;
 }
 /*# sourceMappingURL=Title.css.map */

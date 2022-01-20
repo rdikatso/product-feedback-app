@@ -73,7 +73,9 @@ body {
 }
 
 .add-feedback {
-  margin-left: 44px;
+  position: absolute;
+  top: 7px;
+  margin-left: 3.75rem;
   padding-left: 0.656rem;
   padding-right: 0.656rem;
   width: 8.375rem;
