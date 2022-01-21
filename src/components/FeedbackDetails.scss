@@ -1,0 +1,38 @@
+.feedbackDetails {
+	padding-top: 24px;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+
+	section:first-child {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.edit-feedback-btn {
+		background: #4661e6;
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+		font-weight: bold;
+		font-size: 0.813rem;
+		line-height: 19px;
+	}
+
+	section:nth-child(3) {
+		width: 20.5rem;
+		background: #ffffff;
+		border-radius: 10px;
+		padding: 1.5rem;
+
+		h4 {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 26px;
+			/* identical to box height */
+
+			letter-spacing: -0.25px;
+
+			color: #3a4374;
+		}
+	}
+}

@@ -1,4 +1,20 @@
 .suggestion {
+	width: 20.5rem;
+	height: 200px;
+
+	background: #ffffff;
+	border-radius: 10px;
+	margin: 0 auto;
+
+	padding: 24px;
+
+	margin-bottom: 16px;
+	position: relative;
+
+	.suggestion:first-child {
+		background: red;
+	}
+
 	.numberOfVotes {
 		display: flex;
 		flex-direction: row;
@@ -12,6 +28,10 @@
 		background: #f2f4fe;
 		border-radius: 10px;
 
+		position: absolute;
+		top: 144px;
+		left: 24px;
+
 		img {
 			width: 0.5rem;
 			height: 4px;
@@ -22,6 +42,68 @@
 			font-weight: bold;
 			font-size: 0.813rem;
 			line-height: 19px;
+			letter-spacing: -0.180556px;
+
+			color: #3a4374;
+		}
+	}
+	.suggestion-details {
+		h4 {
+			font-weight: bold;
+			font-size: 0.813rem;
+			line-height: 19px;
+			/* identical to box height */
+
+			letter-spacing: -0.180556px;
+
+			color: #3a4374;
+			margin-bottom: 9px;
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 19px;
+
+			color: #647196;
+
+			margin-bottom: 8px;
+		}
+		button {
+			padding: 5px 16px 6px 16px;
+			border: none;
+			border-radius: 10px;
+
+			background: #f2f4fe;
+
+			font-weight: 600;
+			font-size: 0.813rem;
+			line-height: 19px;
+			/* identical to box height */
+
+			color: #4661e6;
+		}
+	}
+	.comment-details {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		// padding: 6px 13px 7px 16px;
+
+		width: 2.5rem;
+		height: 19px;
+
+		position: absolute;
+		top: 144px;
+		right: 24px;
+
+		p {
+			font-weight: bold;
+			font-size: 0.813rem;
+			line-height: 19px;
+			/* identical to box height */
+
+			text-align: center;
 			letter-spacing: -0.180556px;
 
 			color: #3a4374;

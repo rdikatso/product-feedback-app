@@ -1,3 +1,18 @@
+.suggestion {
+  width: 20.5rem;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 24px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.suggestion .suggestion:first-child {
+  background: red;
+}
+
 .suggestion .numberOfVotes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,6 +29,9 @@
   height: 32px;
   background: #f2f4fe;
   border-radius: 10px;
+  position: absolute;
+  top: 144px;
+  left: 24px;
 }
 
 .suggestion .numberOfVotes img {
@@ -26,6 +44,65 @@
   font-weight: bold;
   font-size: 0.813rem;
   line-height: 19px;
+  letter-spacing: -0.180556px;
+  color: #3a4374;
+}
+
+.suggestion .suggestion-details h4 {
+  font-weight: bold;
+  font-size: 0.813rem;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: -0.180556px;
+  color: #3a4374;
+  margin-bottom: 9px;
+}
+
+.suggestion .suggestion-details p {
+  font-size: 13px;
+  line-height: 19px;
+  color: #647196;
+  margin-bottom: 8px;
+}
+
+.suggestion .suggestion-details button {
+  padding: 5px 16px 6px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #f2f4fe;
+  font-weight: 600;
+  font-size: 0.813rem;
+  line-height: 19px;
+  /* identical to box height */
+  color: #4661e6;
+}
+
+.suggestion .comment-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.5rem;
+  height: 19px;
+  position: absolute;
+  top: 144px;
+  right: 24px;
+}
+
+.suggestion .comment-details p {
+  font-weight: bold;
+  font-size: 0.813rem;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
   letter-spacing: -0.180556px;
   color: #3a4374;
 }

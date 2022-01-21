@@ -9,6 +9,7 @@
 
 body {
 	font-family: "Jost", sans-serif;
+	background: #f2f2f2;
 }
 
 // .suggestions {
@@ -75,45 +76,45 @@ body {
 // 	}
 // }
 .feedbackDetails {
-	section:first-child {
-		display: flex;
-		justify-content: space-between;
+	// section:first-child {
+	// 	display: flex;
+	// 	justify-content: space-between;
 
-		div:first-child {
-			display: flex;
-		}
+	// 	div:first-child {
+	// 		display: flex;
+	// 	}
 
-		margin-bottom: 2rem;
-	}
+	// 	margin-bottom: 2rem;
+	// }
 	section:nth-child(2) {
-		height: 9.44em;
-		border: 1px solid black;
+		// height: 9.44em;
+		// border: 1px solid black;
 
-		display: flex;
-		:last-child {
-			display: flex;
-		}
+		// display: flex;
+		// :last-child {
+		// 	display: flex;
+		// }
 	}
-	.comment {
-		.heading {
-			display: flex;
-			justify-content: space-between;
-		}
-		p {
-			text-align: center;
-		}
-		margin-bottom: 2rem;
-	}
-	section:last-child {
-		.comments {
-			display: flex;
-			justify-content: space-between;
-		}
-	}
+	// .comment {
+	// 	.heading {
+	// 		display: flex;
+	// 		justify-content: space-between;
+	// 	}
+	// 	p {
+	// 		text-align: center;
+	// 	}
+	// 	margin-bottom: 2rem;
+	// }
+	// section:last-child {
+	// 	.comments {
+	// 		display: flex;
+	// 		justify-content: space-between;
+	// 	}
+	// }
 }
-.comment-reply {
-	margin-left: 4rem;
-}
+// .comment-reply {
+// 	margin-left: 4rem;
+// }
 .add-feedback {
 	// vertically center
 

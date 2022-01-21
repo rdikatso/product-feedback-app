@@ -1,15 +1,18 @@
 import React from 'react'
 import { CommentReply } from './CommentReply'
+import '../css/Comment.css'
 
 export const Comment = ({ comment }) => {
     return (
         <div className="comment">
-            <div className="heading">
-                <img src={comment.user.image} alt="profile"></img>
-                <p>
-                    <span>{comment.user.name}</span>
-                    <span>{comment.user.username}</span>
-                </p>
+            <div className="comment-header">
+                <div className="profile">
+                    <img src={comment.user.image} alt="Avatar" className="avatar"></img>
+                    <div>
+                        <p>{comment.user.name}</p>
+                        <p>{`@${comment.user.username}`}</p>
+                    </div>
+                </div>
                 <p>Reply</p>
             </div>
             <p>{comment.content}</p>

@@ -1,0 +1,43 @@
+.feedbackDetails {
+  padding-top: 24px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.feedbackDetails section:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedbackDetails .edit-feedback-btn {
+  background: #4661e6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-size: 0.813rem;
+  line-height: 19px;
+}
+
+.feedbackDetails section:nth-child(3) {
+  width: 20.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.feedbackDetails section:nth-child(3) h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: -0.25px;
+  color: #3a4374;
+}
+/*# sourceMappingURL=FeedbackDetails.css.map */

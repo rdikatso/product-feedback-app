@@ -1,0 +1,37 @@
+.comment {
+  margin-top: 1.5rem;
+  font-size: 0.813rem;
+  line-height: 19px;
+  color: #647196;
+}
+
+.comment .comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.comment .profile div p:first-child {
+  font-weight: bold;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: -0.180556px;
+  color: #3a4374;
+}
+/*# sourceMappingURL=Comment.css.map */

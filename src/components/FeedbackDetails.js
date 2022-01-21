@@ -7,6 +7,7 @@ import { Suggestion } from './Suggestion'
 import { Comment } from './Comment'
 import { BackButton } from './utilities/BackButton'
 import { Button } from './utilities/Button'
+import '../css/FeedbackDetails.css'
 
 export const FeedbackDetails = () => {
     const navigate = useNavigate()
@@ -30,14 +31,14 @@ export const FeedbackDetails = () => {
                     <p>Go Back</p>
                 </div> */}
                 <BackButton />   
-                <Button onClick={handleEditClick} btnLabel="Edit Feedback"/>      
+                <Button onClick={handleEditClick} btnLabel="Edit Feedback" cname="edit-feedback-btn"/>      
                 {/* <button onClick={()=> {navigate('/EditFeedback', {state: currentSuggestion})}}>Edit Feedback</button> */}
             </section>
             <section>
                 <Suggestion suggestion={currentSuggestion}/>
             </section>
             <section>
-                {currentSuggestion.comments.length > 0 ? <p>{currentSuggestion.comments.length} Comments</p> : <p> 0 Comments</p>}
+                {currentSuggestion.comments.length > 0 ? <h4>{currentSuggestion.comments.length} Comments</h4> : <h4> 0 Comments</h4>}
                 {currentSuggestion.comments.length > 0 ? currentSuggestion.comments.map(comment => 
                 <Comment key={comment.id} comment={comment} />)
                 : null}

@@ -6,6 +6,7 @@ import { useLocation }from 'react-router-dom'
 import editFeedbackIcon from '../images/shared/icon-edit-feedback.svg'
 import { BackButton } from './utilities/BackButton'
 import { Button } from './utilities/Button'
+import '../css/EditFeedback.css'
 
 
 export const EditFeedback = () => {
@@ -104,7 +105,7 @@ export const EditFeedback = () => {
                </label>
                <div>
                    <Button onClick={handleDelete} btnLabel="Delete"/>
-                   <Button onClick={handleCancel} btnLabel="Cancel"/>
+                   <Button onClick={handleCancel} btnLabel="Cancel" />
                    <Button onClick={handleAdd} btnLabel="Add Feedback"/>
                </div>
             </form>

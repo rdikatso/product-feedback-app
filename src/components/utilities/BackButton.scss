@@ -1,0 +1,16 @@
+.back-button {
+	width: 4.48rem;
+	height: 19px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	p {
+		font-weight: bold;
+		font-size: 0.813rem;
+		line-height: 19px;
+		/* identical to box height */
+
+		color: #647196;
+	}
+}

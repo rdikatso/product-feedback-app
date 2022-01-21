@@ -2,6 +2,7 @@ import React from 'react'
 // import leftArrow from '../../images/shared/icon-arrow-left.svg'
 import { useNavigate } from 'react-router'
 //src/images/shared/icon-arrow-left.svg
+import '../../css/BackButton.css'
 
 export const BackButton = () => {
 
