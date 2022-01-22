@@ -1,0 +1,24 @@
+.comment-reply {
+	margin-left: 1.438rem;
+	margin-top: 1.625rem;
+	padding-left: 1.438rem;
+
+	.comment-reply-heading {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+
+		.reply {
+			font-weight: 600;
+			color: #4661e6;
+		}
+	}
+
+	span {
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 19px;
+
+		color: #ad1fea;
+	}
+}

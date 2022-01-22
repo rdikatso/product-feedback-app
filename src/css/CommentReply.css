@@ -1,0 +1,28 @@
+.comment-reply {
+  margin-left: 1.438rem;
+  margin-top: 1.625rem;
+  padding-left: 1.438rem;
+}
+
+.comment-reply .comment-reply-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.comment-reply .comment-reply-heading .reply {
+  font-weight: 600;
+  color: #4661e6;
+}
+
+.comment-reply span {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ad1fea;
+}
+/*# sourceMappingURL=CommentReply.css.map */

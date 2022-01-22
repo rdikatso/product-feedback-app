@@ -1,14 +1,25 @@
 .comment {
 	margin-top: 1.5rem;
+	padding-bottom: 24px;
 
 	font-size: 0.813rem;
 	line-height: 19px;
 
 	color: #647196;
 
+	&:not(:last-child) {
+		border-bottom: 1px solid #8c92b325;
+	}
+
 	.comment-header {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 1rem;
+
+		.reply {
+			font-weight: 600;
+			color: #4661e6;
+		}
 	}
 	.profile {
 		display: flex;

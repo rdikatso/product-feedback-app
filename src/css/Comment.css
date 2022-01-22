@@ -1,8 +1,13 @@
 .comment {
   margin-top: 1.5rem;
+  padding-bottom: 24px;
   font-size: 0.813rem;
   line-height: 19px;
   color: #647196;
+}
+
+.comment:not(:last-child) {
+  border-bottom: 1px solid #8c92b325;
 }
 
 .comment .comment-header {
@@ -12,6 +17,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.comment .comment-header .reply {
+  font-weight: 600;
+  color: #4661e6;
 }
 
 .comment .profile {

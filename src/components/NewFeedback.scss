@@ -1,0 +1,50 @@
+.newFeedback {
+	position: relative;
+	padding-top: 34px;
+	.back-button {
+		margin-left: 1.5rem;
+		margin-bottom: 55px;
+	}
+	img {
+		position: absolute;
+		top: 88px;
+		left: 48px;
+	}
+	form {
+		width: 20.5rem;
+		height: 708px;
+		background: #ffffff;
+		border-radius: 10px;
+		margin: 0 auto;
+
+		padding-top: 44px;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-bottom: 24px;
+
+		h2 {
+			// font-style: normal;
+			font-weight: bold;
+			font-size: 1.125rem;
+			line-height: 26px;
+			/* identical to box height */
+
+			letter-spacing: -0.25px;
+
+			color: #3a4374;
+			margin-bottom: 24px;
+		}
+
+		label h4 {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 19px;
+			/* identical to box height */
+
+			letter-spacing: -0.180556px;
+
+			color: #3a4374;
+		}
+	}
+}

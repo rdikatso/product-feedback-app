@@ -48,7 +48,7 @@ export const FeedbackDetails = () => {
                 <textarea placeholder="Type your comment here"/>
                 <div className="comments">
                     <p>250 Characters left</p>
-                    <Button onClick={handlePostclick} btnLabel="Post Comment"/>
+                    <Button onClick={handlePostclick} btnLabel="Post Comment" cname="post-comment"/>
                     {/* <button>Post Comment</button> */}
                 </div>
             </section>

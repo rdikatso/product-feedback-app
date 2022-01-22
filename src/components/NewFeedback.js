@@ -5,6 +5,7 @@ import newFeedbackIcon from '../images/shared/icon-new-feedback.svg'
 import { BackButton } from './utilities/BackButton'
 import { Button } from './utilities/Button'
 import { useNavigate } from 'react-router'
+import '../css/NewFeedback.css'
 
 
 export const NewFeedback = () => {
@@ -32,12 +33,12 @@ export const NewFeedback = () => {
             <form>
                <h2>Create New Feedback</h2>
                <label>
-                   <p>Feedback Title</p>
+                   <h4>Feedback Title</h4>
                    <p>Add a short, descriptive headline</p>
                    <input type="text" name="title"/>
                </label>
                <label>
-                <p>Category</p>
+                <h4>Category</h4>
                 <p>Choose a category for your feedback</p>
                 <select>
                     <option value="feature">Feature</option>
@@ -48,7 +49,7 @@ export const NewFeedback = () => {
                 </select>
                </label>
                <label>
-                   <p>Feedback Detail</p>
+                   <h4>Feedback Detail</h4>
                    <p>Include any specificcomments on what should be improved, added, etc.</p>
                    <textarea />
                </label>

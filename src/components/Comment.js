@@ -13,7 +13,7 @@ export const Comment = ({ comment }) => {
                         <p>{`@${comment.user.username}`}</p>
                     </div>
                 </div>
-                <p>Reply</p>
+                <p className="reply">Reply</p>
             </div>
             <p>{comment.content}</p>
             {comment.replies ? comment.replies.map(reply => <CommentReply key={reply.user.name} comment={reply}/>) : null }
